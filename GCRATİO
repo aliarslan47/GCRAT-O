@@ -1,0 +1,48 @@
+#counting Nucleotide frequency of a given DNA sample
+DNA = open("sequence.fasta", "r")
+content = DNA.read()
+
+def gcRatio(g,c,t,a):
+    x = (g + c) / (g + c + t + a)
+    return x
+
+def taRatio(g,c,t,a):
+    x = (t + a) / (g + c + t + a)
+    return x
+A = content.count("A")
+T = content.count("T")
+C = content.count("C")
+G = content.count("G")
+print("number of A in your sequance is : ", A)
+print("number of T in your sequance is : ", T)
+print("number of C in your sequance is : ", C)
+print("number of G in your sequance is : ", G)
+ratioGC = gcRatio(G, C, T, A)
+ratioTA = taRatio(G, C, T, A)
+print("the GC ratio of your DNA sequence is : ", ratioGC)
+print("the TA ratio of your DNA sequence is : ", ratioTA)
+
+#counting Nucleotide frequency of a given DNA sample
+DNA = open("sequence.fasta", "r")
+content = DNA.read()
+
+def gcRatio(g,c,t,a):
+    x = (g + c) / (g + c + t + a)
+    return x
+
+def taRatio(g,c,t,a):
+    x = (t + a) / (g + c + t + a)
+    return x
+A = content.count("A")
+T = content.count("T")
+C = content.count("C")
+G = content.count("G")
+print("number of A in your sequance is : ", A)
+print("number of T in your sequance is : ", T)
+print("number of C in your sequance is : ", C)
+print("number of G in your sequance is : ", G)
+ratioGC = gcRatio(G, C, T, A)
+ratioTA = taRatio(G, C, T, A)
+print("the GC ratio of your DNA sequence is : ", ratioGC)
+print("the TA ratio of your DNA sequence is : ", ratioTA)
+
